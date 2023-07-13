@@ -53,6 +53,5 @@ runs:
         key: ${{ steps.flutter-action.outputs.CACHE-KEY }}
         restore-keys: |
           ${{ steps.flutter-action.outputs.CACHE-KEY }}
-          ${{ steps.flutter-action.outputs.CACHE-KEY }}
     - run: $GITHUB_ACTION_PATH/setup.sh -c '${{ steps.flutter-action.outputs.CACHE-PATH }}' -n '${{ steps.flutter-action.outputs.VERSION }}' -a '${{ steps.flutter-action.outputs.ARCHITECTURE }}' ${{ steps.flutter-action.outputs.CHANNEL }}
       shell: bash
